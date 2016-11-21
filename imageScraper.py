@@ -22,6 +22,8 @@ for img in soup.findAll('img'):
     print(image)
     """
 
+    # The below will take each image file, and send to this folder
+
     nametemp = img.get('alt')
 
     if len(nametemp) == 0:
