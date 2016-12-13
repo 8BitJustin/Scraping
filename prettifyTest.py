@@ -14,10 +14,11 @@ print(soupdata.prettify())
 # This is if you make it a function and run it
 
 def make_soup(url):
+
     thepage = urllib.request.urlopen(url)
     soupdata = BeautifulSoup(thepage, "html.parser")
     return soupdata
 
-soup = make_soup("http://www.arizona.edu/")
+soup = make_soup("http://jroassistanceform.x10host.com/")
 
 print(soup.prettify())
